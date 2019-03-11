@@ -12,8 +12,17 @@ class TodoListViewController: UITableViewController {
 
     var itemArray=["buy milk","buy egg","buy butter"]
     
+    let defaults = UserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let items = defaults.array(forKey: "toDoListArray") as? [String] {
+            itemArray = items
+            
+          //use if condition to prevent carshing the app if the todo list doesn't excist
+        }
+        
         
     }
     //Mark-tableView DataSource Method
@@ -54,6 +63,8 @@ class TodoListViewController: UITableViewController {
         let alert = UIAlertController(title: "add new todo Item", message: "hello", preferredStyle: .alert)
         let action = UIAlertAction(title: "add Item", style: .default) { (action) in
             //that wt will happned when the user clicks on add Item Button
+            
+            self.defaults.set(self.itemArray, forKey: "toDoListArray")//to save the data even after close the app and we can retrieve the data by the key name"toDoListArray" to be saved in plist file
             
            self.itemArray.append(textField.text!)
             self.tableView.reloadData()
