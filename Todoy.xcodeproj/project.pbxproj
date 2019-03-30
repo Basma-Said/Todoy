@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		283A9A5A2239891700E2A5A7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A9A592239891700E2A5A7 /* Item.swift */; };
+		284301D2223ED0BE00011DA7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 284301D0223ED0BE00011DA7 /* DataModel.xcdatamodeld */; };
 		284A1B852232E5DB00E35323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284A1B842232E5DB00E35323 /* AppDelegate.swift */; };
 		284A1B872232E5DB00E35323 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284A1B862232E5DB00E35323 /* TodoListViewController.swift */; };
 		284A1B8A2232E5DB00E35323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284A1B882232E5DB00E35323 /* Main.storyboard */; };
 		284A1B8C2232E5DF00E35323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284A1B8B2232E5DF00E35323 /* Assets.xcassets */; };
 		284A1B8F2232E5DF00E35323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284A1B8D2232E5DF00E35323 /* LaunchScreen.storyboard */; };
+		28FB40912247F3330076EFB1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB40902247F3330076EFB1 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		283A9A592239891700E2A5A7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		284301D1223ED0BE00011DA7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		284A1B812232E5DB00E35323 /* Todoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284A1B842232E5DB00E35323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284A1B862232E5DB00E35323 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		284A1B8B2232E5DF00E35323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284A1B8E2232E5DF00E35323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284A1B902232E5DF00E35323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FB40902247F3330076EFB1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		283A9A5B2239894400E2A5A7 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				283A9A592239891700E2A5A7 /* Item.swift */,
+				284301D0223ED0BE00011DA7 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				284A1B862232E5DB00E35323 /* TodoListViewController.swift */,
+				28FB40902247F3330076EFB1 /* CategoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FB40912247F3330076EFB1 /* CategoryViewController.swift in Sources */,
 				284A1B872232E5DB00E35323 /* TodoListViewController.swift in Sources */,
-				283A9A5A2239891700E2A5A7 /* Item.swift in Sources */,
+				284301D2223ED0BE00011DA7 /* DataModel.xcdatamodeld in Sources */,
 				284A1B852232E5DB00E35323 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		284301D0223ED0BE00011DA7 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				284301D1223ED0BE00011DA7 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 284301D1223ED0BE00011DA7 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 284A1B792232E5DB00E35323 /* Project object */;
 }
